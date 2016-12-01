@@ -1,4 +1,4 @@
 # ClumsyWrapper
 
-Wrapper for clumsy network tool with python.
+Python Wrapper for clumsy network tool.
 For simulate network issues in your automation tests.

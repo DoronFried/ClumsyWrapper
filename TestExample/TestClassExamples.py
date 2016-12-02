@@ -1,9 +1,10 @@
 from unittest import TestCase
 import time
-from NetworkControllerClumsy import ClumsyConfiguration, ClumsyController
+from src.NetworkControllerClumsy import ClumsyConfiguration, ClumsyController
+import random
 
 
-class TestClass(TestCase):
+class TestClassExamples(TestCase):
 
     def setUp(self):
         self.network_configuration = ClumsyConfiguration(clumsy_path="C:\Users\Doron-Dell\PycharmProjects\Clumzy Project\clumsy-0.2-win64")
@@ -15,6 +16,8 @@ class TestClass(TestCase):
     def tearDown(self):
         self.network_controller.stop()
         pass
+
+## add examples, with random number
 
     def test_something(self):
         for i in range(20):

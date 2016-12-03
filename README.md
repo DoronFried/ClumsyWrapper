@@ -3,6 +3,16 @@ Python Wrapper for clumsy network tool.
 For simulating network issues in your automation tests.
 Examine your product with unstable network.
 Easy to use.
+
+### Why using Clumsy wrapper?
+As automation tester, do you test your product when the network is unstable?  
+With this package you can simulate unstable network during your test cases.  
+Examples of unstable network:
+- loss 10% of packets that comes from specific ip or port
+- stop the network for x seconds every y seconds
+- add delay (lag) time to specific packets (with specific ip or port) 
+- and etc.
+
 > Step by Step Guide
 - First Download clumsy https://jagt.github.io/clumsy/ 
 - Then Download the alpha package from testpypi:
@@ -45,6 +55,9 @@ from ClumsyWrapper.NetworkControllerClumsy import ClumsyConfiguration, ClumsyCon
 ```
 self.network_controller.stop()
 ```
+
+**note:**
+for creating your own filter use clumsy manual guide in https://jagt.github.io/clumsy/ 
 
 Full example:
 ```

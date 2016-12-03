@@ -8,7 +8,7 @@ setup(
   author='Doron Friedlander',
   author_email='doron0123@gmail.com',
   url='https://github.com/DoronFried/ClumsyWrapper', # use the URL to the github repo
-  download_url = 'https://github.com/DoronFried/ClumsyWrapper/tarball/0.1', # link to the tar zip file of the package
+  download_url = 'https://github.com/DoronFried/ClumsyWrapper/tarball/v0.1', # link to the tar zip file of the package
   keywords = ['network', 'clumsy', 'testing', 'automation tests'], # arbitrary keywords
   classifiers = [],
 )

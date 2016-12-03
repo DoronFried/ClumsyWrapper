@@ -1,7 +1,7 @@
 from unittest import TestCase
 import time
-from NetworkController.NetworkControllerClumsy import ClumsyConfiguration, ClumsyController
-from NetworkController.FilterBuilderHelper import FilterHelper
+from ClumsyWrapper.NetworkControllerClumsy import ClumsyConfiguration, ClumsyController
+from ClumsyWrapper.FilterBuilderHelper import FilterHelper
 import random
 
 
@@ -10,6 +10,7 @@ class TestClassExamples(TestCase):
     def setUp(self):
         # using the helper in order to build my own filter
         filter_helper = FilterHelper().tcp().dst_port(port_num=8031).or_condition().tcp().src_port(port_num=8031).no_more_condition().drop(drop_chance=100).finish_generate_filter()
+        # install clumsy and insert the installation path:
         network_configuration = ClumsyConfiguration(clumsy_path="C:\clumsy-0.2-win64")
         network_configuration.custom_config(custom_filter=filter_helper, execute_every_seconds=10, execute_duration=2, always_on=False)
 

@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name='NetworkController',
-  packages=['NetworkController'], # this must be the same as the name above
+  name='ClumsyWrapper',
+  packages=['ClumsyWrapper'], # this must be the same as the name above
   version='0.1',
   description='Python Wrapper for clumsy network tool. For simulating network issues in your automation tests. '
                 'Examine your product with unstable network. Easy to use.',

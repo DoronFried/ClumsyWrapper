@@ -10,7 +10,7 @@ Examples of an unstable network:
 - schedule network connectivity failures (e.g. stop the network for 3 seconds every 10 seconds)
 - add delay (lag) time to specific packets (with specific ip or port) 
 
-> Step by Step Guide
+### Step by Step Guide
 - Download clumsy https://jagt.github.io/clumsy/ 
 - Download the alpha package from testpypi:
 ```

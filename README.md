@@ -23,7 +23,7 @@ pip install --extra-index-url https://testpypi.python.org/pypi clumsywrapper
 from ClumsyWrapper.FilterBuilderHelper import FilterHelper
 from ClumsyWrapper.NetworkControllerClumsy import ClumsyConfiguration, ClumsyController
 ```
-4. Under the **setup** function (part of the unitest package or any testing package):
+4. Under the **setup** function (part of the unitest package or any testing package), do the following:
 
  a. Create your own filter with the FilterHelper class (or use one of the built-in functions). For example, a filter that blocks 100% traffic on port 8031 (in & out packets):
   
